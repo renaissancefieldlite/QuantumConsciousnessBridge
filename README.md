@@ -8,7 +8,7 @@ evidence. It separates the stack into three tracks:
 
 1. `Simulation baseline`
    Controlled model runs that verify analysis pipelines and quantify what a
-   hypothesized carrier or coupling term would look like under known
+   hypothesized transition cadence or coupling term would look like under known
    assumptions.
 2. `Hardware-derived model`
    Local simulations parameterized by calibration-style data such as `T1`,

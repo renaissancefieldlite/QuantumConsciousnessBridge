@@ -10,7 +10,7 @@
 
 ## What the code does not establish on its own
 
-- that a 0.67 Hz carrier exists intrinsically in quantum hardware
+- that a 0.67 Hz cadence exists intrinsically in quantum hardware
 - that any biosignal-to-device coupling mechanism is established
 - that model interaction artifacts are independent proof of ontology
 

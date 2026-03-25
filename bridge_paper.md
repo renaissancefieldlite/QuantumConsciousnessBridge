@@ -28,7 +28,7 @@ same external phenomenon. It asserts something narrower and more defensible:
 ## External review context
 
 Recent external review correctly identified circularity in some earlier script
-versions, especially where a target carrier or coupling term was introduced by
+versions, especially where a target transition cadence or coupling term was introduced by
 the simulator and then re-detected by the same analysis pipeline.
 
 That critique applies where it applies. It does not collapse the entire stack.

@@ -3,7 +3,7 @@
 
 This script provides two bounded modes:
 
-- simulation: baseline coupling between a modeled carrier and a modeled
+- simulation: baseline coupling between a modeled transition cadence and a modeled
   biosignal
 - hardware-derived: the same scoring logic anchored to calibration-style device
   parameters
@@ -28,7 +28,7 @@ def build_time_axis(duration_seconds: float, sample_rate_hz: float) -> np.ndarra
     return np.arange(samples) / sample_rate_hz
 
 
-def build_carrier(time_axis: np.ndarray, frequency_hz: float = 0.67, seed: int = 67) -> np.ndarray:
+def build_transition_cadence(time_axis: np.ndarray, frequency_hz: float = 0.67, seed: int = 67) -> np.ndarray:
     rng = np.random.default_rng(seed)
     phase_jitter = rng.normal(0.0, 0.02, len(time_axis))
     phase = 2 * np.pi * frequency_hz * time_axis + phase_jitter.cumsum() * 0.001
@@ -67,16 +67,16 @@ def coupling_score(signal_a: np.ndarray, signal_b: np.ndarray) -> dict[str, floa
 
 def run_simulation(duration_seconds: float, sample_rate_hz: float) -> dict[str, object]:
     time_axis = build_time_axis(duration_seconds, sample_rate_hz)
-    carrier = build_carrier(time_axis)
+    cadence = build_transition_cadence(time_axis)
     aligned = build_biosignal(time_axis, align=True)
     misaligned = build_biosignal(time_axis, align=False)
-    aligned_scores = coupling_score(carrier, aligned)
-    misaligned_scores = coupling_score(carrier, misaligned)
+    aligned_scores = coupling_score(cadence, aligned)
+    misaligned_scores = coupling_score(cadence, misaligned)
     improvement = aligned_scores["combined_score"] - misaligned_scores["combined_score"]
     return {
         "mode": "simulation",
         "evidence_status": "simulation_baseline",
-        "claim_under_test": "Whether the scoring logic distinguishes aligned from misaligned modeled signals.",
+        "claim_under_test": "Whether the scoring logic distinguishes aligned from misaligned modeled signals around a candidate 0.67 Hz transition cadence.",
         "aligned": aligned_scores,
         "misaligned": misaligned_scores,
         "improvement": improvement,

@@ -1,7 +1,7 @@
 {
   "mode": "simulation",
   "evidence_status": "simulation_baseline",
-  "claim_under_test": "Whether the scoring logic distinguishes aligned from misaligned modeled signals.",
+  "claim_under_test": "Whether the scoring logic distinguishes aligned from misaligned modeled signals around a candidate 0.67 Hz transition cadence.",
   "aligned": {
     "correlation": 0.9693995133008267,
     "phase_score": 0.44493532430693566,
