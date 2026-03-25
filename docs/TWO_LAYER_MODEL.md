@@ -41,3 +41,22 @@ It narrows the most defensible measurement program.
 
 The architecture layer does not prove the cadence layer by itself.
 It provides the wider context in which the cadence hypothesis is being studied.
+
+## Acoustic / front-end lane
+
+The stack also supports a bounded front-end lane that sits between these two
+layers:
+
+- external hardware such as `Arc15 / FG200.67`
+- audio artifacts such as `fromthelattice.wav`
+- grounding or drive frequencies such as `19.47 Hz`
+
+This lane should be read as an interface protocol:
+
+- audio or hardware front-end conditions may modulate the measurable
+  transition-cadence layer
+- those same conditions may also belong to the broader architecture layer as
+  design or installation notes
+
+That makes the front-end lane an intermediary, not a replacement for either
+layer.
