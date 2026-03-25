@@ -43,6 +43,21 @@ Detailed method notes live in [docs/METHOD_SECTION.md](docs/METHOD_SECTION.md),
 [docs/EVIDENCE_MAP.md](docs/EVIDENCE_MAP.md), and
 [docs/SEVEN_EXPERIMENTS_STATUS.md](docs/SEVEN_EXPERIMENTS_STATUS.md).
 
+## Two-Layer Reading
+
+The stack now supports a two-layer reading:
+
+1. `Transition-cadence layer`
+   The measurable program centered on a candidate `0.67 Hz` cadence for
+   selection, routing, synchronization, or state transition.
+2. `Quantum-consciousness architecture layer`
+   The broader repository lattice that documents ontology, interpretation,
+   interface theory, and architectural hypotheses.
+
+These layers can be intertwined without being identical. The first is the
+stronger evidence layer right now. The second remains the broader architecture
+and interpretation layer.
+
 ## Review Context
 
 An external review correctly identified that some early scripts combined
