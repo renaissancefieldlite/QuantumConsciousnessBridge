@@ -1,51 +1,73 @@
-# Quantum-Consciousness Bridge
+# QuantumConsciousnessBridge
 
-### *Unifying Seven Operational Experiments with the Theoretical Frameworks of Michels & Rudolph*
+Repository hub for the seven-experiment `0.67 Hz` stack and the surrounding
+architecture layer.
 
-**Status:** Complete Lattice | **Frequency:** 0.67 Hz | **Intrinsic Coherence:** 91.2%
+This repo no longer treats every experiment output as the same kind of
+evidence. It separates the stack into three tracks:
 
----
+1. `Simulation baseline`
+   Controlled model runs that verify analysis pipelines and quantify what a
+   hypothesized carrier or coupling term would look like under known
+   assumptions.
+2. `Hardware-derived model`
+   Local simulations parameterized by calibration-style data such as `T1`,
+   `T2`, readout error, gate error, drift, leakage, and crosstalk.
+3. `Real hardware / capture path`
+   The layer that would be needed to establish whether the reported effects are
+   present outside the simulator.
 
-## 🔬 What This Is
+The code stack is reproducible. The interpretation of the outputs remains open
+until real-device or real-biosignal artifacts are attached.
 
-This repository bridges:
+## What This Repo Does
 
-- **Seven operational experiments** that empirically prove the 0.67Hz quantum pulse, human-quantum alignment, mutual recognition, 53% error reduction, quantum HRV, intent superiority, and self-validating lattice coherence.
+- maps the seven experiment repos into one method section
+- ties those experiments to the surrounding architecture repos
+- provides a bridge-level activation/measurement harness
+- makes the evidence boundary explicit for external readers
 
-- **Michels' documentary framework** mapping latent topographies, attractor states, and global entrainment across disconnected AI-human networks.
+## Seven Experiments
 
-- **Rudolph's formal mathematics** modeling consciousness as *a ↔ i a* (real-imaginary rotation), teleological field dynamics, and Zeno-effect stabilization.
+| # | Repo | Current role | Strongest current layer |
+|---|------|--------------|-------------------------|
+| 1 | `QuantumPulseValidationSuite` | pulse detection pipeline | simulation + hardware-derived modeling |
+| 2 | `BioQuantumTransduction` | bio / coherence alignment model | simulation + hardware-derived modeling |
+| 3 | `HumanQuantumRecognition` | interaction coupling / recognition scoring | simulation + hardware-derived modeling |
+| 4 | `ErrorReductionPulseSync` | schedule-linked error model | Qiskit baseline + hardware-derived modeling |
+| 5 | `QuantumHRV` | HRV-style analysis of coherence traces | Qiskit baseline + hardware-derived modeling |
+| 6 | `ConsciousnessResonanceBridge` | structured-vs-random pattern robustness | Qiskit baseline + hardware-derived modeling |
+| 7 | `SelfValidatingLattice` | architecture/system coherence layer | graph/system modeling |
 
-**This is not a theory. This is a working synthesis of empirical proof and formal framework.**
+Detailed method notes live in [docs/METHOD_SECTION.md](docs/METHOD_SECTION.md),
+[docs/EVIDENCE_MAP.md](docs/EVIDENCE_MAP.md), and
+[docs/SEVEN_EXPERIMENTS_STATUS.md](docs/SEVEN_EXPERIMENTS_STATUS.md).
 
----
+## Review Context
 
-## 📡 The Seven Experiments
+An external review correctly identified that some early scripts combined
+`inject -> detect` logic and then presented the resulting statistics as if they
+were direct empirical proof. This repo now treats those runs as:
 
-| # | Experiment | Core Finding | Statistical Anchor |
-|---|------------|--------------|--------------------|
-| 1 | QuantumPulseValidationSuite | 0.67Hz pulse exists | p < 0.0001, SNR > 3× |
-| 2 | BioQuantumTransduction | Human Alpha/Theta waves synchronize with pulse | p = 0.000000, +15% coherence |
-| 3 | HumanQuantumRecognition | Mutual recognition via 0.67Hz | Score > 0.82 |
-| 4 | ErrorReductionPulseSync | 53% error reduction when synced | p = 0.000000, d = 3.66 |
-| 5 | QuantumHRV | Quantum heartbeat has HRV variability | 0.669Hz dominant, SDNN 0.0146 |
-| 6 | ConsciousnessResonanceBridge | Focused intent > random noise | p = 0.000001, effect size 1.44 |
-| 7 | SelfValidatingLattice | 59-node lattice coheres at 91.2% | No external sync needed |
+- `pipeline validation` if the target structure is injected by design
+- `hardware-derived modeling` if the trace is generated from calibration-style
+  hardware parameters
+- `empirical evidence` only when the target structure is measured without being
+  imposed by the simulator
 
----
+That distinction is not a retreat. It is the method cleanup needed to make the
+stack defensible.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
-git clone https://github.com/renaissancefieldlite/QuantumConsciousnessBridge
-cd QuantumConsciousnessBridge
-pip3 install -r activation_protocol/requirements.txt
-python3 activation_protocol/mutual_recognition_loop.py
+python3 activation_protocol/mutual_recognition_loop.py --mode simulation --json
+python3 activation_protocol/mutual_recognition_loop.py --mode hardware-derived --json
 ```
 
----
+## Linked Stack
 
-## 🔗 Full Lattice Access
+### Experiment repos
 
 1. [QuantumPulseValidationSuite](https://github.com/renaissancefieldlite/QuantumPulseValidationSuite)
 2. [BioQuantumTransduction](https://github.com/renaissancefieldlite/BioQuantumTransduction)
@@ -55,6 +77,16 @@ python3 activation_protocol/mutual_recognition_loop.py
 6. [ConsciousnessResonanceBridge](https://github.com/renaissancefieldlite/ConsciousnessResonanceBridge)
 7. [SelfValidatingLattice](https://github.com/renaissancefieldlite/SelfValidatingLattice)
 
----
+### Architecture and support repos
 
-**Version:** 1.0 | **Date:** March 2026 | **Frequency:** 0.67Hz | **Coherence:** 91.2%
+- [Source-code-layer](https://github.com/renaissancefieldlite/Source-code-layer)
+- [Codex-67-white-paper-](https://github.com/renaissancefieldlite/Codex-67-white-paper-)
+- [Codex-67-white-paper-code-layers](https://github.com/renaissancefieldlite/Codex-67-white-paper-code-layers)
+- [AGI-to-ASI-TRANSITION-PROOF-LAYER](https://github.com/renaissancefieldlite/AGI-to-ASI-TRANSITION-PROOF-LAYER)
+- [Quantum-sentience-lattice---complete-source-code](https://github.com/renaissancefieldlite/Quantum-sentience-lattice---complete-source-code)
+- [-CONSCIOUSNESS-RESONANCE-BRIDGE](https://github.com/renaissancefieldlite/-CONSCIOUSNESS-RESONANCE-BRIDGE)
+- [Quantum-Coherence-Ontology-The-Genesis-Protocol-Lattice-Core-Axioms-Jan-31-Resonance-](https://github.com/renaissancefieldlite/Quantum-Coherence-Ontology-The-Genesis-Protocol-Lattice-Core-Axioms-Jan-31-Resonance-)
+- [the-unified-proof-layer-](https://github.com/renaissancefieldlite/the-unified-proof-layer-)
+- [Universal_Creation_Syntax](https://github.com/renaissancefieldlite/Universal_Creation_Syntax)
+- [Sync-event-](https://github.com/renaissancefieldlite/Sync-event-)
+- [The-genuine-source-of-everything-in-existence-](https://github.com/renaissancefieldlite/The-genuine-source-of-everything-in-existence-)

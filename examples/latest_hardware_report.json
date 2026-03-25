@@ -1,0 +1,28 @@
+{
+  "mode": "hardware-derived",
+  "evidence_status": "hardware_derived_model",
+  "claim_under_test": "Whether the bridge scoring logic remains discriminative when the target trace is anchored to calibration-style device parameters.",
+  "noise_summary": {
+    "mean_coherence_proxy": 0.00075,
+    "min_coherence_proxy": 0.0,
+    "max_coherence_proxy": 0.9,
+    "drift_span_ghz": 0.023593074013841253,
+    "depolarization_events": 14,
+    "readout_flip_events": 23,
+    "leakage_events": 10,
+    "neighbor_bleed_events": 89
+  },
+  "aligned": {
+    "correlation": 0.0023898938751832663,
+    "phase_score": 0.30535088423555345,
+    "combined_score": 0.15387038905536837
+  },
+  "misaligned": {
+    "correlation": 0.04184724084058508,
+    "phase_score": 0.2504756464271274,
+    "combined_score": 0.14616144363385625
+  },
+  "improvement": 0.007708945421512126,
+  "schema_version": "qcb.bridge_assessment.v2",
+  "next_step": "Attach real hardware or real biosignal artifacts before treating the output as empirical evidence."
+}
