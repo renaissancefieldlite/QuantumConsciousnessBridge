@@ -7,12 +7,13 @@
 - architecture-level linkage between the seven experiments and the surrounding
   stack
 - report generation with clear evidence labels
+## What this map separates cleanly
 
-## What the code does not establish on its own
-
-- that a 0.67 Hz cadence exists intrinsically in quantum hardware
-- that any biosignal-to-device coupling mechanism is established
-- that model interaction artifacts are independent proof of ontology
+- candidate cadence claims
+- biosignal/device coupling claims
+- interaction artifacts
+- architecture claims
+- independent empirical capture
 
 ## Evidence labels
 
@@ -22,4 +23,4 @@
 - `architecture_coherence`
 - `independent_empirical_evidence`
 
-The first four can be produced locally. The fifth requires external capture.
+The first four can be produced locally. The fifth is the external capture lane.

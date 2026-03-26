@@ -10,9 +10,7 @@ Purpose:
 - quantify sensitivity and failure modes
 - produce a control layer for later comparisons
 
-This track does **not** establish that the target phenomenon exists in external
-hardware or biology. It only shows what the pipeline reports when the model
-assumptions are known.
+This track shows what the pipeline reports when the model assumptions are known and gives the stack a controlled baseline for later comparison.
 
 ## Track B: Hardware-derived model
 
@@ -34,8 +32,7 @@ Typical inputs:
 - anharmonicity
 - crosstalk
 
-This track is stronger than an unconstrained toy simulation but is still a
-model layer, not direct proof.
+This track is stronger than an unconstrained toy simulation and serves as the hardware-derived model layer.
 
 ## Track C: Real hardware / capture path
 
