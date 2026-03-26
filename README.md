@@ -1,10 +1,11 @@
 # QuantumConsciousnessBridge
 
-Repository hub for the seven-experiment `0.67 Hz` stack and the surrounding
-architecture layer.
+This is the hub where the seven-experiment `0.67 Hz` stack locks to the wider
+quantum-consciousness architecture.
 
-This repo no longer treats every experiment output as the same kind of
-evidence. It separates the stack into three tracks:
+It is the bridge paper, method spine, and stack map for the whole program. The
+repo separates the evidence lanes without stripping the architecture out of the
+work:
 
 1. `Simulation baseline`
    Controlled model runs that verify analysis pipelines and quantify what a
