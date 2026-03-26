@@ -36,9 +36,11 @@ Typical evidence types:
 
 ## Why the distinction matters
 
-The transition-cadence layer gives the stack a measurable program.
+The transition-cadence layer does not negate the broader architecture layer.
+It narrows the most defensible measurement program.
 
-The architecture layer gives that program its wider context, naming system, and installation logic.
+The architecture layer does not prove the cadence layer by itself.
+It provides the wider context in which the cadence hypothesis is being studied.
 
 ## Acoustic / front-end lane
 

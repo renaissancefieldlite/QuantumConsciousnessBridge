@@ -10,4 +10,5 @@
 | ConsciousnessResonanceBridge | yes | yes | pending | structured-vs-random robustness study |
 | SelfValidatingLattice | yes | yes | pending | architecture coherence layer |
 
-This table is intentionally legible under technical review while still preserving the full stack shape.
+This table is intentionally conservative. It is meant to survive external
+technical review.
