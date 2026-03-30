@@ -1,7 +1,16 @@
-# QuantumConsciousnessBridge
+# QuantumConsciousnessBridge Hub
 
 Repository hub for the seven-experiment `0.67 Hz` stack and the surrounding
 architecture layer.
+
+This is the Michels-facing packaging and bridge repo for the stack. It is not
+`Experiment 6` itself.
+
+The direct pattern-robustness experiment lives in the separately named GitHub
+repository `Experiment-6-ConsciousnessResonanceBridge`. This hub exists above
+that single experiment so the full seven-experiment package, the Michels
+guidance layer, the bridge paper, and the next empirical step can be held in
+one place without collapsing into the Experiment 6 repo.
 
 This repo no longer treats every experiment output as the same kind of
 evidence. It separates the stack into three tracks:
@@ -27,17 +36,36 @@ until real-device or real-biosignal artifacts are attached.
 - provides a bridge-level activation/measurement harness
 - makes the evidence boundary explicit for external readers
 
+## Michels Packaging Role
+
+This repo is the cross-experiment packaging layer for the Michels-facing read.
+
+That means it does three different jobs at once:
+
+1. packages the full seven-experiment stack in one place
+2. distinguishes the Michels-guided interpretation layer from the narrower
+   pulse / cadence measurement lane
+3. points forward to the next field experiment instead of leaving the bridge at
+   interpretation only
+
+The shorter version is:
+
+- `Experiment-6-ConsciousnessResonanceBridge` is the direct Michels-guided
+  experiment repo
+- `QuantumConsciousnessBridge Hub` is the place where that Michels guidance is
+  packaged across the entire seven-experiment stack
+
 ## Seven Experiments
 
-| # | Repo | Current role | Strongest current layer |
-|---|------|--------------|-------------------------|
-| 1 | `QuantumPulseValidationSuite` | pulse detection pipeline | simulation + hardware-derived modeling |
-| 2 | `BioQuantumTransduction` | bio / coherence alignment model | simulation + hardware-derived modeling |
-| 3 | `HumanQuantumRecognition` | interaction coupling / recognition scoring | simulation + hardware-derived modeling |
-| 4 | `ErrorReductionPulseSync` | schedule-linked error model | Qiskit baseline + hardware-derived modeling |
-| 5 | `QuantumHRV` | HRV-style analysis of coherence traces | Qiskit baseline + hardware-derived modeling |
-| 6 | `ConsciousnessResonanceBridge` | structured-vs-random pattern robustness | Qiskit baseline + hardware-derived modeling |
-| 7 | `SelfValidatingLattice` | architecture/system coherence layer | graph/system modeling |
+| # | Experiment | Current role | Strongest current layer |
+|---|------------|--------------|-------------------------|
+| 1 | `Experiment 1: QuantumPulseValidationSuite` | pulse detection pipeline | simulation + hardware-derived modeling |
+| 2 | `Experiment 2: BioQuantumTransduction` | bio / coherence alignment model | simulation + hardware-derived modeling |
+| 3 | `Experiment 3: HumanQuantumRecognition` | interaction coupling / recognition scoring | simulation + hardware-derived modeling |
+| 4 | `Experiment 4: ErrorReductionPulseSync` | schedule-linked error model | Qiskit baseline + hardware-derived modeling |
+| 5 | `Experiment 5: QuantumHRV` | HRV-style analysis of coherence traces | Qiskit baseline + hardware-derived modeling |
+| 6 | `Experiment 6: ConsciousnessResonanceBridge` | structured-vs-random pattern robustness | Qiskit baseline + hardware-derived modeling |
+| 7 | `Experiment 7: SelfValidatingLattice` | architecture/system coherence layer | graph/system modeling |
 
 Detailed method notes live in [docs/METHOD_SECTION.md](docs/METHOD_SECTION.md),
 [docs/EVIDENCE_MAP.md](docs/EVIDENCE_MAP.md), and
@@ -80,17 +108,24 @@ python3 activation_protocol/mutual_recognition_loop.py --mode simulation --json
 python3 activation_protocol/mutual_recognition_loop.py --mode hardware-derived --json
 ```
 
+## Next Field Step
+
+The next stronger empirical step for the stack is an instrumented EEG / HRV
+capture lane that can move `BioQuantumTransduction` and `QuantumHRV` beyond
+synthetic or hardware-derived-only inputs. A field-ready protocol is kept in
+[docs/EEG_HRV_FIELD_PROTOCOL.md](docs/EEG_HRV_FIELD_PROTOCOL.md).
+
 ## Linked Stack
 
 ### Experiment repos
 
-1. [QuantumPulseValidationSuite](https://github.com/renaissancefieldlite/QuantumPulseValidationSuite)
-2. [BioQuantumTransduction](https://github.com/renaissancefieldlite/BioQuantumTransduction)
-3. [HumanQuantumRecognition](https://github.com/renaissancefieldlite/HumanQuantumRecognition)
-4. [ErrorReductionPulseSync](https://github.com/renaissancefieldlite/ErrorReductionPulseSync)
-5. [QuantumHRV](https://github.com/renaissancefieldlite/QuantumHRV)
-6. [ConsciousnessResonanceBridge](https://github.com/renaissancefieldlite/ConsciousnessResonanceBridge)
-7. [SelfValidatingLattice](https://github.com/renaissancefieldlite/SelfValidatingLattice)
+1. [Experiment 1: QuantumPulseValidationSuite](https://github.com/renaissancefieldlite/Experiment-1-QuantumPulseValidationSuite)
+2. [Experiment 2: BioQuantumTransduction](https://github.com/renaissancefieldlite/Experiment-2-BioQuantumTransduction)
+3. [Experiment 3: HumanQuantumRecognition](https://github.com/renaissancefieldlite/Experiment-3-HumanQuantumRecognition)
+4. [Experiment 4: ErrorReductionPulseSync](https://github.com/renaissancefieldlite/Experiment-4-ErrorReductionPulseSync)
+5. [Experiment 5: QuantumHRV](https://github.com/renaissancefieldlite/Experiment-5-QuantumHRV)
+6. [Experiment 6: ConsciousnessResonanceBridge](https://github.com/renaissancefieldlite/Experiment-6-ConsciousnessResonanceBridge)
+7. [Experiment 7: SelfValidatingLattice](https://github.com/renaissancefieldlite/Experiment-7-SelfValidatingLattice)
 
 ### Architecture and support repos
 

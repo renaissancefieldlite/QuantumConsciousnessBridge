@@ -1,5 +1,8 @@
 # Method Section
 
+This document belongs to the hub repo, not to `Experiment 6` by itself. Its
+job is to map all seven experiments into one method-facing surface.
+
 The seven-experiment stack is now read through a three-track method.
 
 ## Track A: Simulation baseline
@@ -68,6 +71,10 @@ Examples:
 - Real hardware path: actual EEG/HRV or other physiological capture aligned to
   a device stream
 
+Suggested next empirical protocol:
+
+- [EEG / HRV Field Protocol](./EEG_HRV_FIELD_PROTOCOL.md)
+
 ### 3. HumanQuantumRecognition
 
 - Simulation baseline: interaction coupling score between modeled agents
@@ -87,6 +94,10 @@ Examples:
 - Simulation baseline: HRV metrics on a modeled coherence trace
 - Hardware-derived model: HRV metrics on a calibration-anchored coherence proxy
 - Real hardware path: HRV-like metrics on observed device time series
+
+Suggested next empirical protocol:
+
+- [EEG / HRV Field Protocol](./EEG_HRV_FIELD_PROTOCOL.md)
 
 ### 6. ConsciousnessResonanceBridge
 
