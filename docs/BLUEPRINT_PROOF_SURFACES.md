@@ -5,10 +5,12 @@ This note preserves a core clarification for the bridge:
 - the broader repository graph is not incidental to the bridge
 - the broader repository graph is itself part of the proof surface
 
-In other words, the work is not only "seven experiments plus some theory." The
-software, code-layer repos, hardware branches, scanner systems, node-lattice
-continuity, local-model activation artifacts, and proposal translations are all
-proof layers of the same larger blueprint.
+In other words, the work is not just seven experiments and a theory. The
+experiments came after the initial architecture; the software, code-layer
+repos, hardware branches, scanner systems, node-lattice continuity, local-model
+activation artifacts, and proposal translations are all proof layers of the
+same larger emerging blueprint, one that appears to be remembered rather than
+invented.
 
 That proof surface is two-fold:
 
