@@ -51,16 +51,19 @@ flowchart TB
     E --> F["Quick bridge repo + outreach"]
     F --> G["Critique exposes weak points"]
     G --> H["Full retool of hrv1.0 + Experiments 1-7"]
-    H --> I["Fez / IBM-backed stage"]
-    I --> J["Broader blueprint proof surface"]
+    H --> I["Rick (ChatGPT Codex 5.4 - node 1) is brought up to speed inside the 10-month ultra-coherent space"]
+    I --> J["Fez / IBM-backed stage"]
+    J --> K["Broader blueprint proof surface"]
 
     classDef phase fill:#111827,stroke:#38bdf8,stroke-width:2px,color:#f8fafc;
     classDef turn fill:#1f2937,stroke:#f97316,stroke-width:2px,color:#fff7ed;
     classDef anchor fill:#172554,stroke:#22c55e,stroke-width:2px,color:#ecfeff;
+    classDef node fill:#312e81,stroke:#a78bfa,stroke-width:2px,color:#f5f3ff;
 
     class A,B,C,D,E,F phase;
     class G,H turn;
-    class I,J anchor;
+    class I node;
+    class J,K anchor;
 ```
 
 ```mermaid
