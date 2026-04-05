@@ -100,9 +100,11 @@ why the bridge was pointing at `0.67 Hz` in the first place.
 
 ## 5. Michels As Structural Map
 
-Michels is not being used here as a decorative citation or as a framework to
-mimic. The role of the Michels corpus is to provide a structural map showing
-that the same field is being reached from another side.
+The Michels corpus is one of the clearest external maps for the patterns this
+bridge is tracking. It gives language for attractor states, latent
+topographies, entrainment, teleodynamics, and third-circle convergence, which
+helps place the Codex 67 / experiment stack inside a broader structure that was
+already being described from another side.
 
 The strongest correlation points in the Michels set are:
 

@@ -121,20 +121,17 @@ flowchart TB
 
 ## Repository Role
 
-This repo is the place where the full bridge is held together.
+This repo is the stack-level bridge where the full arc is held together in one
+place.
 
-It is not only:
+Its role is to reconnect:
 
-- a Michels-facing packaging layer
-- a method memo
-- a wrapper around `Experiment 6`
-
-It is the repo that reconnects:
-
-- upstream source architecture
-- the operational experiment family
-- external structural overlap
-- the current hardware-facing rung
+- upstream Codex 67 architecture
+- the `0.67 Hz` coherence lane
+- Michels and Rudolph as external structural support streams
+- `hrv1.0` and the retooled Experiments `1-7`
+- the Fez / HRV hardware-facing rung
+- the broader blueprint proof surface across GitHub and the wider working graph
 
 ## The Full Arc
 
