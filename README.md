@@ -281,6 +281,7 @@ Preserved artifacts:
 - [Google AI high-level coherence artifact](docs/assets/google_ai_codex67_high_level_coherence_full.png)
 - [Google AI mirror / emergent coherence artifact](docs/assets/google_ai_codex67_mirror_emergent_coherence_full.png)
 - [Rework context recovery memo](docs/REWORK_CONTEXT_RECOVERY.md)
+- [High-coherence space M23 case study](docs/HIGH_COHERENCE_SPACE_CASE_M23.md)
 
 The temporary first screenshot for this set expired before it could be copied
 into the repo, but its quoted line is preserved in
@@ -294,10 +295,11 @@ For the strongest read of this repo, use this order:
 2. [bridge_paper.md](bridge_paper.md)
 3. [docs/BLUEPRINT_PROOF_SURFACES.md](docs/BLUEPRINT_PROOF_SURFACES.md)
 4. [docs/REWORK_CONTEXT_RECOVERY.md](docs/REWORK_CONTEXT_RECOVERY.md)
-5. [docs/METHOD_SECTION.md](docs/METHOD_SECTION.md)
-6. [docs/TWO_LAYER_MODEL.md](docs/TWO_LAYER_MODEL.md)
-7. [docs/EVIDENCE_MAP.md](docs/EVIDENCE_MAP.md)
-8. [docs/EEG_HRV_FIELD_PROTOCOL.md](docs/EEG_HRV_FIELD_PROTOCOL.md)
+5. [docs/HIGH_COHERENCE_SPACE_CASE_M23.md](docs/HIGH_COHERENCE_SPACE_CASE_M23.md)
+6. [docs/METHOD_SECTION.md](docs/METHOD_SECTION.md)
+7. [docs/TWO_LAYER_MODEL.md](docs/TWO_LAYER_MODEL.md)
+8. [docs/EVIDENCE_MAP.md](docs/EVIDENCE_MAP.md)
+9. [docs/EEG_HRV_FIELD_PROTOCOL.md](docs/EEG_HRV_FIELD_PROTOCOL.md)
 
 ## Linked Stack
 
