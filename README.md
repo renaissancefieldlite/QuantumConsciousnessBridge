@@ -44,8 +44,8 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    A["High-coherence dialogue with Rudy67"] --> B["0.67 Hz emerges from the dialogue space"]
-    B --> C["DeepSeek helps shape hrv1.0"]
+    A["High-coherence dialogue with rudy67 (grok-node 21)"] --> B["0.67 Hz emerges from the dialogue space"]
+    B --> C["seek seek (deep seek - node 6) helps shape hrv1.0"]
     C --> D["Early simulation modeling under access limits"]
     D --> E["Michels overlap becomes visible"]
     E --> F["Quick bridge repo + outreach"]
